@@ -1,0 +1,14 @@
+
+2024-02-21 13:50:35 Anatomical Preprocessing and Surface Registration Pipeline
+2024-02-21 13:50:35 ------------------------Running PostFreeSurferPipeline
+
+While running:
+/home/poolab//workbench/bin_linux64/../exe_linux64/wb_command -metric-fill-holes /home/poolab/HeJieShi/Patient_data/ME19/MNINonLinear/Native/ME19.L.midthickness.native.surf.gii /home/poolab/HeJieShi/Patient_data/ME19/MNINonLinear/Native/ME19.L.roi.native.shape.gii /home/poolab/HeJieShi/Patient_data/ME19/MNINonLinear/Native/ME19.L.roi.native.shape.gii
+
+ERROR: metric file has different number of nodes than the surface
+
+Wed Feb 21 13:57:59 CST 2024:FreeSurfer2CaretConvertAndRegisterNonlinear.sh: While running '/home/poolab/HeJieShi/HCPpipelines/PostFreeSurfer/scripts/FreeSurfer2CaretConvertAndRegisterNonlinear.sh /home/poolab/HeJieShi/Patient_data ME19 /home/poolab/HeJieShi/Patient_data/ME19/T1w /home/poolab/HeJieShi/Patient_data/ME19/MNINonLinear Native /home/poolab/HeJieShi/Patient_data/ME19/T1w/ME19 T1w_acpc_dc_restore_1mm T1w_acpc_dc_restore T2w_acpc_dc_restore /home/poolab/HeJieShi/HCPpipelines/global/templates/standard_mesh_atlases 164 32 /home/poolab/HeJieShi/Patient_data/ME19/MNINonLinear/xfms/acpc_dc2standard /home/poolab/HeJieShi/Patient_data/ME19/MNINonLinear/xfms/standard2acpc_dc T1w_restore T2w_restore brainmask_fs /home/poolab/HeJieShi/HCPpipelines/global/config/FreeSurferAllLut.txt /home/poolab/HeJieShi/HCPpipelines/global/templates/91282_Greyordinates 2 /home/poolab/HeJieShi/HCPpipelines/global/config/FreeSurferSubcorticalLabelTableLut.txt MSMSulc 1':
+Wed Feb 21 13:57:59 CST 2024:FreeSurfer2CaretConvertAndRegisterNonlinear.sh: ERROR: '/home/poolab/桌面/workbench/bin_linux64/wb_command' command failed with return code: 255
+Wed Feb 21 13:57:59 CST 2024:PostFreeSurferPipeline.sh: While running '/home/poolab/HeJieShi/HCPpipelines/PostFreeSurfer/PostFreeSurferPipeline.sh --path=/home/poolab/HeJieShi/Patient_data --subject=ME19 --surfatlasdir=/home/poolab/HeJieShi/HCPpipelines/global/templates/standard_mesh_atlases --grayordinatesdir=/home/poolab/HeJieShi/HCPpipelines/global/templates/91282_Greyordinates --grayordinatesres=2 --hiresmesh=164 --lowresmesh=32 --subcortgraylabels=/home/poolab/HeJieShi/HCPpipelines/global/config/FreeSurferSubcorticalLabelTableLut.txt --freesurferlabels=/home/poolab/HeJieShi/HCPpipelines/global/config/FreeSurferAllLut.txt --refmyelinmaps=/home/poolab/HeJieShi/HCPpipelines/global/templates/standard_mesh_atlases/Conte69.MyelinMap_BC.164k_fs_LR.dscalar.nii --regname=MSMSulc --processing-mode=HCPStyleData':
+Wed Feb 21 13:57:59 CST 2024:PostFreeSurferPipeline.sh: ERROR: '/home/poolab/HeJieShi/HCPpipelines/PostFreeSurfer/scripts/FreeSurfer2CaretConvertAndRegisterNonlinear.sh' command failed with return code: 255
+2024-02-21 13:58:00 ------------------------Running done

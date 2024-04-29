@@ -1,0 +1,29 @@
+++ 3dAFNItoNIFTI: AFNI version=AFNI_24.1.02 (Apr  8 2024) [64-bit]
+[7m** FATAL ERROR:[0m Can't open dataset 'stats.sub003+orig'
+** Program compile date = Apr  8 2024
+++ 3dAFNItoNIFTI: AFNI version=AFNI_24.1.02 (Apr  8 2024) [64-bit]
+[7m** FATAL ERROR:[0m Can't open dataset 'mask_anat.sub003+orig'
+** Program compile date = Apr  8 2024
+mv: cannot stat '*.nii.gz': No such file or directory
+Image Exception : #63 :: No image files match: stats.sub003+orig
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  No image files match: stats.sub003+orig
+/home/cputest/Stroke/Code/Stroke_TMS_Pipline/task_fmri_script/afni_postprocess.sh: line 47: 3617581 Aborted                 (core dumped) fslmaths stats."$Subject"+orig.nii.gz -mas mask_anat."$Subject"+orig.nii.gz stats."$Subject".nii.gz
+processing  stats.sub003.nii.gz
+Traceback (most recent call last):
+  File "/home/cputest/anaconda3/lib/python3.11/site-packages/nibabel/loadsave.py", line 100, in load
+    stat_result = os.stat(filename)
+                  ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'stats.sub003.nii.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cputest/Stroke/Code/Stroke_TMS_Pipline/task_fmri_script/4Dto3D.py", line 26, in <module>
+    main()
+  File "/home/cputest/Stroke/Code/Stroke_TMS_Pipline/task_fmri_script/4Dto3D.py", line 12, in main
+    img = nib.load(input_file)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/cputest/anaconda3/lib/python3.11/site-packages/nibabel/loadsave.py", line 102, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: 'stats.sub003.nii.gz'

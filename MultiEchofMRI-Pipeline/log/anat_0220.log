@@ -1,0 +1,5 @@
+anat_highres_HCP_wrapper_par_pre.sh: line 16: /usr/local/HCPpipelines/Examples/Scripts/SetUpHCPPipeline_gxl.sh: No such file or directory
+
+2024-02-21 17:08:38 Anatomical Preprocessing and Surface Registration Pipeline
+2024-02-21 17:08:38 ------------------------Running PreFreeSurferPipeline
+2024-02-21 18:40:36 ------------------------Running done

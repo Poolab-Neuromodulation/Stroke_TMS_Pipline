@@ -1,0 +1,277 @@
+
+Multi-Echo Preprocessing & Denoising Pipeline
+2024-02-27 09:12:57 ------------------------Processing the Field Maps
+
+Processing the Field Maps
+2024-02-27 09:21:28 ------------------------Coregistering SBrefs to the Anatomical Image
+Coregistering SBrefs to the Anatomical Image
+2024-02-27 09:21:39 ------------------------sweep through sessions 
+2024-02-27 09:22:05 ------------------------sweep through sessions done
+2024-02-27 09:27:21 ------------------------use BBRegister (BBR) to fine-tune the existing co-registration & output FSL style transformation matrix
+2024-02-27 09:29:36 ------------------------parallel proc
+2024-02-27 09:36:30 ------------------------parallel done
+2024-02-27 09:38:06 ------------------------matlab proc
+2024-02-27 09:38:31 ------------------------Correcting for Slice Time Differences, Head Motion, & Spatial Distortion
+Correcting for Slice Time Differences, Head Motion, & Spatial Distortion
+2024-02-27 09:38:31 ------------------define some acq. parameters /home/poolab/HeJieShi/Health_data/ME13/func/rest//session_1/run_1/TE.txt
+2024-02-27 09:44:25 ------------------/home/poolab/HeJieShi/Health_data/ME13/func/rest//session_1/run_1/Rest_AVG.nii.gz /home/poolab/HeJieShi/Health_data/ME13/func/rest//session_1/run_1/vols/AVG_*.nii.gz
+2024-02-27 12:32:05 ------------------use the first echo (w/ least amount of signal dropout) to estimate bias field;
+2024-02-27 12:34:05 ------------------------Performing Signal-Decay Based Denoising
+Performing Signal-Decay Based Denoising
+2024-02-27 12:34:18 ------------------run the tedana workflow;
+Exception ignored on calling ctypes callback function: <function _ThreadpoolInfo._find_modules_with_dl_iterate_phdr.<locals>.match_module_callback at 0x7fc3e1418430>
+Traceback (most recent call last):
+  File "/home/poolab/anaconda3/lib/python3.9/site-packages/threadpoolctl.py", line 400, in match_module_callback
+    self._make_module_from_path(filepath)
+  File "/home/poolab/anaconda3/lib/python3.9/site-packages/threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "/home/poolab/anaconda3/lib/python3.9/site-packages/threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "/home/poolab/anaconda3/lib/python3.9/site-packages/threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+INFO     tedana:tedana_workflow:466 Using output directory: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana
+INFO     tedana:tedana_workflow:484 Loading input data: ['/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_E1_acpc.nii.gz', '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_E2_acpc.nii.gz', '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_E3_acpc.nii.gz', '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_E4_acpc.nii.gz', '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_E5_acpc.nii.gz']
+INFO     io:__init__:153 Generating figures directory: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/figures
+INFO     tedana:tedana_workflow:543 Using user-defined mask
+WARNING  utils:make_adaptive_mask:112 5797 voxels in user-defined mask do not have good signal. Removing voxels from mask.
+INFO     tedana:tedana_workflow:591 Computing T2* map
+INFO     combine:make_optcom:197 Optimally combining data with voxel-wise T2* estimates
+INFO     tedana:tedana_workflow:616 Writing optimally combined data set: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-optcom_bold.nii.gz
+INFO     pca:tedpca:219 Computing PCA of optimally combined multi-echo data with selection criteria: aic
+/home/poolab/anaconda3/lib/python3.9/site-packages/tedana/io.py:755: UserWarning: Data array used to create a new image contains 64-bit ints. This is likely due to creating the array with numpy and passing `int` as the `dtype`. Many tools such as FSL and SPM cannot deal with int64 in Nifti images, so for compatibility the data has been converted to int32.
+  nii = new_img_like(ref_img, newdata, affine=affine, copy_header=copy_header)
+/home/poolab/anaconda3/lib/python3.9/site-packages/sklearn/utils/deprecation.py:101: FutureWarning: Attribute `n_features_` was deprecated in version 1.2 and will be removed in 1.4. Use `n_features_in_` instead.
+  warnings.warn(msg, category=FutureWarning)
+INFO     pca:tedpca:259 Optimal number of components based on different criteria:
+INFO     pca:tedpca:260 AIC: 32 | KIC: 27 | MDL: 22 | 90% varexp: 286 | 95% varexp: 355
+INFO     pca:tedpca:265 Explained variance based on different criteria:
+INFO     pca:tedpca:266 AIC: 0.647% | KIC: 0.637% | MDL: 0.626% | 90% varexp: 0.901% | 95% varexp: 0.951%
+INFO     pca:tedpca:283 Plotting maPCA optimization curves
+INFO     collect:generate_metrics:121 Calculating weight maps
+INFO     collect:generate_metrics:130 Calculating parameter estimate maps for optimally combined data
+INFO     collect:generate_metrics:143 Calculating z-statistic maps
+INFO     collect:generate_metrics:153 Calculating F-statistic maps
+INFO     collect:generate_metrics:173 Thresholding z-statistic maps
+INFO     collect:generate_metrics:180 Calculating T2* F-statistic maps
+INFO     collect:generate_metrics:187 Calculating S0 F-statistic maps
+INFO     collect:generate_metrics:195 Counting significant voxels in T2* F-statistic maps
+INFO     collect:generate_metrics:201 Counting significant voxels in S0 F-statistic maps
+INFO     collect:generate_metrics:208 Thresholding optimal combination beta maps to match T2* F-statistic maps
+INFO     collect:generate_metrics:214 Thresholding optimal combination beta maps to match S0 F-statistic maps
+INFO     collect:generate_metrics:221 Calculating kappa and rho
+INFO     collect:generate_metrics:230 Calculating variance explained
+INFO     collect:generate_metrics:236 Calculating normalized variance explained
+INFO     collect:generate_metrics:243 Calculating DSI between thresholded T2* F-statistic and optimal combination beta maps
+INFO     collect:generate_metrics:254 Calculating DSI between thresholded S0 F-statistic and optimal combination beta maps
+INFO     collect:generate_metrics:265 Calculating signal-noise t-statistics
+INFO     collect:generate_metrics:303 Counting significant noise voxels from z-statistic maps
+INFO     collect:generate_metrics:314 Calculating decision table score
+INFO     pca:tedpca:393 Selected 32 components with 64.67% normalized variance explained using aic dimensionality detection
+/home/poolab/anaconda3/lib/python3.9/site-packages/tedana/io.py:344: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  deblanked = data.replace("", np.nan)
+INFO     ica:tedica:82 ICA with random seed 42 converged in 77 iterations
+INFO     tedana:tedana_workflow:653 Making second component selection guess from ICA results
+INFO     collect:generate_metrics:121 Calculating weight maps
+INFO     collect:generate_metrics:130 Calculating parameter estimate maps for optimally combined data
+INFO     collect:generate_metrics:143 Calculating z-statistic maps
+INFO     collect:generate_metrics:153 Calculating F-statistic maps
+INFO     collect:generate_metrics:173 Thresholding z-statistic maps
+INFO     collect:generate_metrics:180 Calculating T2* F-statistic maps
+INFO     collect:generate_metrics:187 Calculating S0 F-statistic maps
+INFO     collect:generate_metrics:195 Counting significant voxels in T2* F-statistic maps
+INFO     collect:generate_metrics:201 Counting significant voxels in S0 F-statistic maps
+INFO     collect:generate_metrics:208 Thresholding optimal combination beta maps to match T2* F-statistic maps
+INFO     collect:generate_metrics:214 Thresholding optimal combination beta maps to match S0 F-statistic maps
+INFO     collect:generate_metrics:221 Calculating kappa and rho
+INFO     collect:generate_metrics:230 Calculating variance explained
+INFO     collect:generate_metrics:236 Calculating normalized variance explained
+INFO     collect:generate_metrics:243 Calculating DSI between thresholded T2* F-statistic and optimal combination beta maps
+INFO     collect:generate_metrics:254 Calculating DSI between thresholded S0 F-statistic and optimal combination beta maps
+WARNING  utils:dice:192 2 of 32 components have empty maps, resulting in Dice values of 0. Please check your component table for dice columns with 0-values.
+INFO     collect:generate_metrics:265 Calculating signal-noise t-statistics
+INFO     collect:generate_metrics:303 Counting significant noise voxels from z-statistic maps
+INFO     collect:generate_metrics:314 Calculating decision table score
+INFO     tedica:automatic_selection:59 Performing ICA component selection with Kundu decision tree v2.5
+INFO     component_selector:__init__:293 Performing component selection with kundu_MEICA27_decision_tree
+INFO     component_selector:__init__:294 Following the full decision tree designed by Prantik Kundu
+INFO     selection_nodes:manual_classify:107 Step 0: manual_classify: Set all to unclassified 
+INFO     selection_utils:log_decision_tree_step:426 Step 0: manual_classify applied to 32 components. 32 True -> unclassified. 0 False -> nochange.
+INFO     selection_nodes:manual_classify:141 Step 0: manual_classify component classification tags are cleared
+INFO     selection_utils:log_classification_counts:471 Step 0: Total component classifications: 32 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 1: left_op_right: rejected if rho>kappa, else nochange
+INFO     selection_utils:log_decision_tree_step:426 Step 1: left_op_right applied to 32 components. 5 True -> rejected. 27 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 1: Total component classifications: 5 rejected, 27 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 2: left_op_right: rejected if ['countsigFS0>countsigFT2 & countsigFT2>0'], else nochange
+INFO     selection_utils:log_decision_tree_step:426 Step 2: left_op_right applied to 32 components. 5 True -> rejected. 27 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 2: Total component classifications: 5 rejected, 27 unclassified
+INFO     selection_nodes:calc_median:663 Step 3: calc_median: Median(median_varex)
+INFO     selection_utils:log_decision_tree_step:438 Step 3: calc_median calculated: median_varex=0.9484348369574599
+INFO     selection_utils:log_classification_counts:471 Step 3: Total component classifications: 5 rejected, 27 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 4: left_op_right: rejected if ['dice_FS0>dice_FT2 & variance explained>0.95'], else nochange
+INFO     selection_utils:log_decision_tree_step:426 Step 4: left_op_right applied to 32 components. 3 True -> rejected. 29 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 4: Total component classifications: 5 rejected, 27 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 5: left_op_right: rejected if ['0>signal-noise_t & variance explained>0.95'], else nochange
+INFO     selection_utils:log_decision_tree_step:426 Step 5: left_op_right applied to 32 components. 5 True -> rejected. 27 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 5: Total component classifications: 9 rejected, 23 unclassified
+INFO     selection_nodes:calc_kappa_elbow:771 Step 6: calc_kappa_elbow: Calc Kappa Elbow
+INFO     selection_utils:kappa_elbow_kundu:641 Calculating kappa elbow based on min of all and nonsig components.
+INFO     selection_utils:log_decision_tree_step:438 Step 6: calc_kappa_elbow calculated: kappa_elbow_kundu=14.571980162738708, kappa_allcomps_elbow=32.46273620942288, kappa_nonsig_elbow=14.571980162738708, varex_upper_p=0.4797256520495171
+INFO     selection_utils:log_classification_counts:471 Step 6: Total component classifications: 9 rejected, 23 unclassified
+INFO     selection_nodes:dec_reclassify_high_var_comps:1140 Step 7: reclassify_high_var_comps: Change unclassified to unclass_highvar for the top couple of components with the highest jumps in variance
+INFO     selection_utils:log_decision_tree_step:426 Step 7: reclassify_high_var_comps applied to 23 components. 4 True -> unclass_highvar. 19 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 7: Total component classifications: 9 rejected, 4 unclass_highvar, 19 unclassified
+INFO     selection_nodes:calc_rho_elbow:896 Step 8: calc_rho_elbow: Calc Rho Elbow
+INFO     selection_utils:log_decision_tree_step:438 Step 8: calc_rho_elbow calculated: rho_elbow_kundu=14.716497034505728, rho_allcomps_elbow=23.665034975702635, rho_unclassified_elbow=12.775808705637765, elbow_f05=7.708647422176786
+INFO     selection_utils:log_classification_counts:471 Step 8: Total component classifications: 9 rejected, 4 unclass_highvar, 19 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 9: left_op_right: provisionalaccept if kappa>=14.57, else nochange
+INFO     selection_utils:log_decision_tree_step:426 Step 9: left_op_right applied to 19 components. 18 True -> provisionalaccept. 1 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 9: Total component classifications: 18 provisionalaccept, 9 rejected, 4 unclass_highvar, 1 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 10: left_op_right: unclassified if rho>14.72, else nochange
+INFO     selection_utils:log_decision_tree_step:426 Step 10: left_op_right applied to 18 components. 2 True -> unclassified. 16 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 10: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_classification_doesnt_exist:1025 Step 11: classification_doesnt_exist: Change ['provisionalaccept', 'unclassified', 'unclass_highvar'] to accepted if less than 2 components with provisionalaccept exist
+INFO     selection_nodes:dec_classification_doesnt_exist:1027 Step 11: classification_doesnt_exist If nothing is provisionally accepted by this point, then rerun ICA & selection. If max iterations of rerunning done, then accept everything not already rejected
+INFO     selection_utils:log_decision_tree_step:426 Step 11: classification_doesnt_exist applied to 23 components. None True -> 0. None False -> 23.
+INFO     selection_utils:log_classification_counts:471 Step 11: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:calc_varex_thresh:1332 Step 12: calc_varex_thresh: Calc varex_upper_thresh, 90th percentile threshold
+INFO     selection_utils:log_decision_tree_step:438 Step 12: calc_varex_thresh calculated: varex_upper_thresh=1.2519792840067407, upper_perc=90
+INFO     selection_utils:log_classification_counts:471 Step 12: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:calc_varex_thresh:1332 Step 13: calc_varex_thresh: Calc varex_lower_thresh, 25th percentile threshold
+INFO     selection_utils:log_decision_tree_step:438 Step 13: calc_varex_thresh calculated: varex_lower_thresh=0.40270712016072857, lower_perc=25
+INFO     selection_utils:log_classification_counts:471 Step 13: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_utils:get_extend_factor:815 extend_factor=2.0, based on number of fMRI volumes
+INFO     selection_utils:log_decision_tree_step:438 Step 14: calc_extend_factor calculated: extend_factor=2.0
+INFO     selection_utils:log_classification_counts:471 Step 14: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_utils:log_decision_tree_step:438 Step 15: calc_max_good_meanmetricrank calculated: max_good_meanmetricrank=32.0
+INFO     selection_utils:log_classification_counts:471 Step 15: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_utils:log_decision_tree_step:438 Step 16: calc_varex_kappa_ratio calculated: kappa_rate=60.81935856103269
+INFO     selection_utils:log_classification_counts:471 Step 16: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 17: left_op_right: rejected if ['d_table_score>32.0 & variance explained>2.0*1.25'], else nochange
+INFO     selection_nodes:dec_left_op_right:393 Step 17: left_op_right If variance and d_table_scores are high, then reject
+INFO     selection_utils:comptable_classification_changer:280 Step 17: No components fit criterion True to change classification
+INFO     selection_utils:log_decision_tree_step:426 Step 17: left_op_right applied to 23 components. 0 True -> rejected. 23 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 17: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 18: left_op_right: accepted if ['d_table_score>32.0 & variance explained<=0.4 & kappa<=14.57'], else nochange
+INFO     selection_nodes:dec_left_op_right:393 Step 18: left_op_right If low variance, accept even if bad kappa & d_table_scores
+INFO     selection_utils:comptable_classification_changer:280 Step 18: No components fit criterion True to change classification
+INFO     selection_utils:log_decision_tree_step:426 Step 18: left_op_right applied to 23 components. 0 True -> accepted. 23 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 18: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_classification_doesnt_exist:1025 Step 19: classification_doesnt_exist: Change ['provisionalaccept', 'unclassified', 'unclass_highvar'] to accepted if ['unclassified', 'unclass_highvar'] doesn't exist
+INFO     selection_nodes:dec_classification_doesnt_exist:1027 Step 19: classification_doesnt_exist If nothing left is unclassified, then accept all
+INFO     selection_utils:log_decision_tree_step:426 Step 19: classification_doesnt_exist applied to 23 components. None True -> 0. None False -> 23.
+INFO     selection_utils:log_classification_counts:471 Step 19: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:calc_revised_meanmetricrank_guesses:1806 Step 20: calc_revised_meanmetricrank_guesses: Calc revised d_table_score & num accepted component guesses
+INFO     selection_utils:log_decision_tree_step:438 Step 20: calc_revised_meanmetricrank_guesses calculated: num_acc_guess=19, conservative_guess=9.5, restrict_factor=2
+INFO     selection_utils:log_classification_counts:471 Step 20: Total component classifications: 16 provisionalaccept, 9 rejected, 4 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 21: left_op_right: rejected if ['d_table_score_node20>9.5 & varex kappa ratio>2*2.0 & variance explained>2.0*1.25'], else nochange
+INFO     selection_nodes:dec_left_op_right:393 Step 21: left_op_right Reject if a combination of kappa, variance, and other factors are ranked worse than others
+INFO     selection_utils:log_decision_tree_step:426 Step 21: left_op_right applied to 23 components. 1 True -> rejected. 22 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 21: Total component classifications: 16 provisionalaccept, 10 rejected, 3 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 22: left_op_right: rejected if ['d_table_score_node20>0.9*19 & variance explained>2.0*0.4'], else nochange
+INFO     selection_nodes:dec_left_op_right:393 Step 22: left_op_right Reject if a combination of variance and ranks of other metrics are worse than others
+INFO     selection_utils:log_decision_tree_step:426 Step 22: left_op_right applied to 22 components. 2 True -> rejected. 20 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 22: Total component classifications: 14 provisionalaccept, 12 rejected, 3 unclass_highvar, 3 unclassified
+INFO     selection_nodes:calc_varex_thresh:1332 Step 23: calc_varex_thresh: Calc varex_new_lower_thresh, 25th percentile threshold
+INFO     selection_utils:log_decision_tree_step:438 Step 23: calc_varex_thresh calculated: varex_new_lower_thresh=0.41951002640665835, new_lower_perc=25
+INFO     selection_utils:log_classification_counts:471 Step 23: Total component classifications: 14 provisionalaccept, 12 rejected, 3 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 24: left_op_right: accepted if ['d_table_score_node20>19 & variance explained>0.42'], else nochange
+INFO     selection_nodes:dec_left_op_right:393 Step 24: left_op_right Accept components with a bad d_table_score, but are at the higher end of the remaining variance so more cautious to not remove
+INFO     selection_utils:comptable_classification_changer:280 Step 24: No components fit criterion True to change classification
+INFO     selection_utils:log_decision_tree_step:426 Step 24: left_op_right applied to 20 components. 0 True -> accepted. 20 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 24: Total component classifications: 14 provisionalaccept, 12 rejected, 3 unclass_highvar, 3 unclassified
+INFO     selection_nodes:dec_left_op_right:391 Step 25: left_op_right: accepted if ['kappa<=14.57 & variance explained>0.42'], else nochange
+INFO     selection_nodes:dec_left_op_right:393 Step 25: left_op_right For not already rejected components, accept ones below the kappa elbow, but at the higher end of the remaining variance so more cautious to not remove
+INFO     selection_utils:log_decision_tree_step:426 Step 25: left_op_right applied to 20 components. 1 True -> accepted. 19 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 25: Total component classifications: 1 accepted, 14 provisionalaccept, 12 rejected, 3 unclass_highvar, 2 unclassified
+INFO     selection_nodes:manual_classify:107 Step 26: manual_classify: Set ['provisionalaccept', 'unclassified', 'unclass_highvar'] to accepted 
+INFO     selection_nodes:manual_classify:109 Step 26: manual_classify Anything still provisional (accepted or rejected) should be accepted
+INFO     selection_utils:log_decision_tree_step:426 Step 26: manual_classify applied to 19 components. 19 True -> accepted. 0 False -> nochange.
+INFO     selection_utils:log_classification_counts:471 Step 26: Total component classifications: 20 accepted, 12 rejected
+WARNING  component_selector:are_only_necessary_metrics_used:474 Decision tree kundu used the following metrics that were not declared as necessary: {'d_table_score_node20', 'varex kappa ratio'}
+INFO     io:denoise_ts:498 Variance explained by decomposition: 76.97%
+INFO     io:write_split_ts:554 Writing high-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-optcomAccepted_bold.nii.gz
+INFO     io:write_split_ts:561 Writing low-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-optcomRejected_bold.nii.gz
+INFO     io:write_split_ts:568 Writing denoised time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-optcomDenoised_bold.nii.gz
+INFO     io:writeresults:618 Writing full ICA coefficient feature set: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-ICA_components.nii.gz
+INFO     io:writeresults:622 Writing denoised ICA coefficient feature set: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-ICAAccepted_components.nii.gz
+INFO     io:writeresults:628 Writing Z-normalized spatial component maps: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/desc-ICAAccepted_stat-z_components.nii.gz
+INFO     io:writeresults_echoes:668 Writing Kappa-filtered echo #1 timeseries
+INFO     io:denoise_ts:498 Variance explained by decomposition: 69.73%
+INFO     io:write_split_ts:554 Writing high-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-1_desc-Accepted_bold.nii.gz
+INFO     io:write_split_ts:561 Writing low-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-1_desc-Rejected_bold.nii.gz
+INFO     io:write_split_ts:568 Writing denoised time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-1_desc-Denoised_bold.nii.gz
+INFO     io:writeresults_echoes:668 Writing Kappa-filtered echo #2 timeseries
+INFO     io:denoise_ts:498 Variance explained by decomposition: 70.71%
+INFO     io:write_split_ts:554 Writing high-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-2_desc-Accepted_bold.nii.gz
+INFO     io:write_split_ts:561 Writing low-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-2_desc-Rejected_bold.nii.gz
+INFO     io:write_split_ts:568 Writing denoised time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-2_desc-Denoised_bold.nii.gz
+INFO     io:writeresults_echoes:668 Writing Kappa-filtered echo #3 timeseries
+INFO     io:denoise_ts:498 Variance explained by decomposition: 65.67%
+INFO     io:write_split_ts:554 Writing high-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-3_desc-Accepted_bold.nii.gz
+INFO     io:write_split_ts:561 Writing low-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-3_desc-Rejected_bold.nii.gz
+INFO     io:write_split_ts:568 Writing denoised time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-3_desc-Denoised_bold.nii.gz
+INFO     io:writeresults_echoes:668 Writing Kappa-filtered echo #4 timeseries
+INFO     io:denoise_ts:498 Variance explained by decomposition: 58.72%
+INFO     io:write_split_ts:554 Writing high-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-4_desc-Accepted_bold.nii.gz
+INFO     io:write_split_ts:561 Writing low-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-4_desc-Rejected_bold.nii.gz
+INFO     io:write_split_ts:568 Writing denoised time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-4_desc-Denoised_bold.nii.gz
+INFO     io:writeresults_echoes:668 Writing Kappa-filtered echo #5 timeseries
+INFO     io:denoise_ts:498 Variance explained by decomposition: 51.69%
+INFO     io:write_split_ts:554 Writing high-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-5_desc-Accepted_bold.nii.gz
+INFO     io:write_split_ts:561 Writing low-Kappa time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-5_desc-Rejected_bold.nii.gz
+INFO     io:write_split_ts:568 Writing denoised time series: /home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Tedana/echo-5_desc-Denoised_bold.nii.gz
+INFO     tedana:tedana_workflow:854 Making figures folder with static component maps and timecourse plots.
+INFO     io:denoise_ts:498 Variance explained by decomposition: 76.97%
+/home/poolab/anaconda3/lib/python3.9/site-packages/tedana/io.py:755: UserWarning: Data array used to create a new image contains 64-bit ints. This is likely due to creating the array with numpy and passing `int` as the `dtype`. Many tools such as FSL and SPM cannot deal with int64 in Nifti images, so for compatibility the data has been converted to int32.
+  nii = new_img_like(ref_img, newdata, affine=affine, copy_header=copy_header)
+/home/poolab/anaconda3/lib/python3.9/site-packages/nilearn/plotting/img_plotting.py:1426: FutureWarning: The default strategy for standardize is currently 'zscore' which incorrectly uses population std to calculate sample zscores. The new strategy 'zscore_sample' corrects this behavior by using the sample std. In release 0.13, the default strategy will be replaced by the new strategy and the 'zscore' option will be removed. Please use 'zscore_sample' instead.
+  data = clean(data, t_r=t_r, detrend=True, standardize='zscore')
+INFO     tedana:tedana_workflow:876 Generating dynamic report
+INFO     tedana:tedana_workflow:879 Workflow completed
+2024-02-27 13:03:02 ------------------sweep through files of interest
+2024-02-27 13:04:40 ------------------------Removing Spatially Diffuse Noise via MGTR
+Removing Spatially Diffuse Noise via MGTR
+[?1h=
+                                    < M A T L A B (R) >
+                          Copyright 1984-2022 The MathWorks, Inc.
+                          R2022b (9.13.0.2049777) 64-bit (glnxa64)
+                                      August 24, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+Output_Betas =
+
+    '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_OCME+MEICA+MGTR_Betas'
+
+
+Output_MGTR =
+
+    '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_OCME+MEICA+MGTR'
+
+
+Subdir =
+
+    '/home/poolab/HeJieShi/Health_data/ME13'
+
+
+Input =
+
+    '/home/poolab/HeJieShi/Health_data/ME13/func/rest/session_1/run_1/Rest_OCME+MEICA.nii.gz'
+
+{Error using images.internal.nifti.niftiFile/getUncompressedFileName
+Cannot unzip file. tempdir needs write permissions and sufficient free space.
+
+Error in images.internal.nifti.niftiFile (line 45)
+                    [filename, self.TempfileCleaners, ~] = self.getUncompressedFileName(firstFile);
+
+Error in niftiread (line 66)
+    NF = images.internal.nifti.niftiFile(varargin{:});
+
+Error in temp (line 18)
+data = niftiread(Input);
+} 
+>> 

@@ -1,0 +1,64 @@
+++ 3dAFNItoNIFTI: AFNI version=AFNI_24.1.02 (Apr  8 2024) [64-bit]
+++ 3dAFNItoNIFTI: AFNI version=AFNI_24.1.02 (Apr  8 2024) [64-bit]
+processing  stats.ME13.nii.gz
+[?1h=
+                        < M A T L A B (R) >
+              Copyright 1984-2022 The MathWorks, Inc.
+             R2022b (9.13.0.2049777) 64-bit (glnxa64)
+                          August 24, 2022
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[?1l>reading volume from aparc+aseg.nii.gz...
+extracting label 1024 (ctx_lh_precentral)
+writing output to ./ROIs/ROI_left_precentral.nii.gz.
+reading volume from aparc+aseg.nii.gz...
+extracting label 2024 (ctx_rh_precentral)
+writing output to ./ROIs/ROI_right_precentral.nii.gz.
+reading volume from aparc+aseg.nii.gz...
+extracting label 1022 (ctx_lh_postcentral)
+writing output to ./ROIs/ROI_left_postcentral.nii.gz.
+reading volume from aparc+aseg.nii.gz...
+extracting label 2022 (ctx_rh_postcentral)
+writing output to ./ROIs/ROI_right_postcentral.nii.gz.
+  adding: ROIs/ (stored 0%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_left_precentral.nii.gz (deflated 21%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_right_postcentral.nii.gz (deflated 22%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_left_precentral.ROI.nii.gz (deflated 93%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_left_postcentral.ROI.nii.gz (deflated 97%)
+  adding: ROIs/ROI_right_precentral.nii.gz (deflated 80%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_right_precentral.ROI.nii.gz (deflated 96%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_right_postcentral.ROI.nii.gz (deflated 93%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_left_postcentral.ROI.nii.gz (deflated 98%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_left_precentral.ROI.nii.gz (deflated 97%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_left_postcentral.nii.gz (deflated 21%)
+  adding: ROIs/ROI_right_postcentral.nii.gz (deflated 83%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_left_postcentral.ROI.nii.gz (deflated 94%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_right_postcentral.ROI.nii.gz (deflated 97%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_right_postcentral.ROI.nii.gz (deflated 96%)
+  adding: ROIs/ROI_left_precentral.nii.gz (deflated 80%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_right_precentral.nii.gz (deflated 20%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_right_precentral.nii.gz (deflated 19%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_right_precentral.ROI.nii.gz (deflated 92%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_left_postcentral.ROI.nii.gz (deflated 93%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_right_precentral.ROI.nii.gz (deflated 94%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_right_precentral.nii.gz (deflated 18%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_right_postcentral.nii.gz (deflated 21%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_left_postcentral.nii.gz (deflated 19%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_right_precentral.nii.gz (deflated 18%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_left_precentral.nii.gz (deflated 19%)
+  adding: ROIs/Activate_1e-5_right_finger_motor_left_postcentral.nii.gz (deflated 19%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_right_postcentral.ROI.nii.gz (deflated 94%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_right_postcentral.nii.gz (deflated 19%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_left_precentral.ROI.nii.gz (deflated 95%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_left_precentral.nii.gz (deflated 17%)
+  adding: ROIs/Activate_1e-3_right_finger_motor_left_precentral.ROI.nii.gz (deflated 92%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_left_postcentral.nii.gz (deflated 21%)
+  adding: ROIs/Activate_1e-3_left_finger_motor_left_precentral.nii.gz (deflated 20%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_right_precentral.ROI.nii.gz (deflated 93%)
+  adding: ROIs/ROI_left_postcentral.nii.gz (deflated 84%)
+  adding: ROIs/Activate_1e-5_left_finger_motor_right_postcentral.nii.gz (deflated 19%)
+2024-04-23 23:59:10 ------------------------Mapping Denoised Functional Data to Surface
+Mapping Denoised Functional Data to Surface

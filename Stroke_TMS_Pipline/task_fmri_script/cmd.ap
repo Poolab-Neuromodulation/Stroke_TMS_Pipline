@@ -1,0 +1,48 @@
+#!/usr/bin/env tcsh
+
+# created by uber_subject.py: version 1.4 (May 3, 2022)
+# creation date: Fri Mar 15 21:35:10 2024
+
+if ( $#argv < 5 ) then
+    echo "NO ENOUGH INPUT PARAM!"
+    exit
+else
+    set subj = $argv[1]
+    set anat = $argv[2]
+    set dsets = $argv[3]
+    set stim_times_left = $argv[4]
+    set stim_times_right = $argv[5]
+endif
+
+# transfer the space of T1 from MNI(but actually ORIG) to ORIG but not change any data, 
+# otherwise afni_proc.py will antomatic detect the space of T1 as tlrc, thus the program will run ERROR
+3drefit -space ORIG $anat
+
+# run afni_proc.py to create a single subject processing script
+afni_proc.py -subj_id $subj                                                 \
+        -script proc.$subj -scr_overwrite                                   \
+        -blocks tshift align volreg blur mask scale regress                 \
+        -copy_anat $anat                                                    \
+        -anat_has_skull no                                                  \
+        -dsets $dsets                                                       \
+        -tcat_remove_first_trs 0                                            \
+        -align_opts_aea -giant_move                                         \
+        -volreg_align_to MIN_OUTLIER                                        \
+        -volreg_align_e2a                                                   \
+        -blur_size 4.0                                                      \
+        -regress_stim_times                                                 \
+            $stim_times_left                                                \
+            $stim_times_right                                               \
+        -regress_stim_labels                                                \
+            left right                                                      \
+        -regress_basis 'BLOCK(24,1)'                                        \
+        -regress_censor_motion 0.3                                          \
+        -regress_apply_mot_types demean deriv                               \
+        -regress_motion_per_run                                             \
+        -regress_opts_3dD                                                   \
+            -jobs 8                                                         \
+        -regress_compute_fitts                                              \
+        -regress_make_ideal_sum sum_ideal.1D                                \
+        -regress_est_blur_epits                                             \
+        -regress_est_blur_errts
+

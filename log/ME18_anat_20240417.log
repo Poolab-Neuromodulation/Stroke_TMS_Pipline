@@ -1,0 +1,308 @@
+
+2024-04-17 10:38:26 Anatomical Preprocessing and Surface Registration Pipeline
+2024-04-17 10:38:26 ------------------------Running PreFreeSurferPipeline
+2024-04-17 11:10:16 ------------------------Running FreeSurferPipeline
+2024-04-17 15:42:52 ------------------------Running PostFreeSurferPipeline
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+reading colortable from annotation file...
+colortable with 76 entries read (originally Simple_surface_labels2008.txt)
+
+WARNING: input sphere is either unusually irregular or not centered, inspect the input
+
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+reading colortable from annotation file...
+colortable with 76 entries read (originally Simple_surface_labels2008.txt)
+
+WARNING: input sphere is either unusually irregular or not centered, inspect the input
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.white.164k_fs_LR.surf.gii was 0.095128 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.midthickness.164k_fs_LR.surf.gii was 0.069384 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.pial.164k_fs_LR.surf.gii was 0.067408 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.inflated.164k_fs_LR.surf.gii was 0.068084 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.very_inflated.164k_fs_LR.surf.gii was 0.068077 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.white.164k_fs_LR.surf.gii was 0.093422 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.midthickness.164k_fs_LR.surf.gii was 0.068036 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.pial.164k_fs_LR.surf.gii was 0.067035 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.inflated.164k_fs_LR.surf.gii was 0.067541 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.very_inflated.164k_fs_LR.surf.gii was 0.067522 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.aparc.164k_fs_LR.dlabel.nii was 0.161518 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.aparc.a2009s.164k_fs_LR.dlabel.nii was 0.167607 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.sulc.164k_fs_LR.dscalar.nii was 0.169459 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.thickness.164k_fs_LR.dscalar.nii was 0.153178 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.curvature.164k_fs_LR.dscalar.nii was 0.153131 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.MyelinMap_BC.164k_fs_LR.dscalar.nii was 0.159244 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.SmoothedMyelinMap_BC.164k_fs_LR.dscalar.nii was 0.154104 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/S1200.MyelinMap_BC_MSMAll.164k_fs_LR.dscalar.nii was 0.153354 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/S1200.sulc_MSMAll.164k_fs_LR.dscalar.nii was 0.160033 seconds.
+
+
+Info: Time to color volume data is 0.202 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/T2w_restore.nii.gz was 0.390082 seconds.
+
+
+Info: Time to color volume data is 0.199 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/T1w_restore.nii.gz was 0.387149 seconds.
+
+
+Info: Time to color volume data is 0.073 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/aparc+aseg.nii.gz was 0.319034 seconds.
+
+
+Info: Time to color volume data is 0.068 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/aparc.a2009s+aseg.nii.gz was 0.267833 seconds.
+
+
+Info: Time to color volume data is 0.069 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/wmparc.nii.gz was 0.273192 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.midthickness.164k_fs_LR.surf.gii was 0.101163 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.inflated.164k_fs_LR.surf.gii was 0.068641 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.very_inflated.164k_fs_LR.surf.gii was 0.067451 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.sphere.164k_fs_LR.surf.gii was 0.067502 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.midthickness.164k_fs_LR.surf.gii was 0.0917 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.inflated.164k_fs_LR.surf.gii was 0.067666 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.very_inflated.164k_fs_LR.surf.gii was 0.066009 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.sphere.164k_fs_LR.surf.gii was 0.066441 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.sulc.164k_fs_LR.dscalar.nii was 0.17046 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.curvature.164k_fs_LR.dscalar.nii was 0.157714 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.MyelinMap_BC.164k_fs_LR.dscalar.nii was 0.15228 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.SmoothedMyelinMap_BC.164k_fs_LR.dscalar.nii was 0.151408 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.StrainJ_MSMSulc.164k_fs_LR.dscalar.nii was 0.169853 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.StrainR_MSMSulc.164k_fs_LR.dscalar.nii was 0.166084 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/ME18.NonlinearRegJacobians_FNIRT.164k_fs_LR.dscalar.nii was 0.167892 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.StrainJ_FS.164k_fs_LR.dscalar.nii was 0.174416 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.StrainR_FS.164k_fs_LR.dscalar.nii was 0.174867 seconds.
+
+
+Info: Time to color volume data is 0.198 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/T1w_restore.nii.gz was 0.387021 seconds.
+
+
+Info: Time to color volume data is 0.194 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/T2w_restore.nii.gz was 0.381778 seconds.
+
+
+Info: Time to color volume data is 0.408 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/MNI152_T1_0.8mm.nii.gz was 0.539724 seconds.
+
+
+Info: Time to color volume data is 0.029 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/ME18.NonlinearRegJacobians_log2.nii.gz was 0.05057 seconds.
+
+ERRORS loading scene, output image may be incorrect.
+NAME OF FILE: ME18.StrainJ_MSMAll.164k_fs_LR.dscalar.nii
+PATH TO FILE: /home/cputest/Stroke/Data/ME18/MNINonLinear
+
+File not found:
+NAME OF FILE: ME18.StrainR_MSMAll.164k_fs_LR.dscalar.nii
+PATH TO FILE: /home/cputest/Stroke/Data/ME18/MNINonLinear
+
+File not found:
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.L.midthickness.164k_fs_LR.surf.gii was 0.096218 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/ME18.R.midthickness.164k_fs_LR.surf.gii was 0.092977 seconds.
+
+
+Info: Time to color volume data is 0.198 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/T2w_restore.nii.gz was 0.387573 seconds.
+
+
+Info: Time to color volume data is 0.188 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/T1w_restore.nii.gz was 0.376616 seconds.
+
+
+Info: Time to color volume data is 0.391 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/MNI152_T1_0.8mm.nii.gz was 0.532691 seconds.
+
+
+Info: Time to color volume data is 0.055 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/ME18.NonlinearRegJacobians_log2.nii.gz was 0.079725 seconds.
+
+
+Info: Time to color volume data is 0.185 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/StructuralQC/ME18.T1w_acpc_dc_restore_to_MNILinear.nii.gz was 0.356548 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.L.inflated.native.surf.gii was 0.091477 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.L.midthickness.native.surf.gii was 0.062518 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.L.pial.native.surf.gii was 0.061824 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.L.very_inflated.native.surf.gii was 0.062464 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.L.white.native.surf.gii was 0.095708 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.R.inflated.native.surf.gii was 0.092738 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.R.midthickness.native.surf.gii was 0.061873 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.R.pial.native.surf.gii was 0.060487 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.R.very_inflated.native.surf.gii was 0.064233 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/Native/ME18.R.white.native.surf.gii was 0.064502 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.aparc.native.dlabel.nii was 0.132787 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.aparc.a2009s.native.dlabel.nii was 0.136642 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.curvature.native.dscalar.nii was 0.126475 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.sulc.native.dscalar.nii was 0.130698 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.thickness.native.dscalar.nii was 0.125561 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.MyelinMap_BC.native.dscalar.nii was 0.124092 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/MNINonLinear/Native/ME18.SmoothedMyelinMap_BC.native.dscalar.nii was 0.129603 seconds.
+
+
+Info: Time to color volume data is 0.197 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/T2w_acpc_dc_restore.nii.gz was 0.380293 seconds.
+
+
+Info: Time to color volume data is 0.185 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/T1w_acpc_dc_restore.nii.gz was 0.366375 seconds.
+
+
+Info: Time to color volume data is 0.071 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/aparc+aseg.nii.gz was 0.266367 seconds.
+
+
+Info: Time to color volume data is 0.066 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/aparc.a2009s+aseg.nii.gz was 0.263379 seconds.
+
+
+Info: Time to color volume data is 0.066 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/ME18/T1w/wmparc.nii.gz was 0.281606 seconds.
+
+2024-04-17 16:53:36 ------------------------Running done

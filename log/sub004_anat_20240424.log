@@ -1,0 +1,1298 @@
+
+2024-04-24 17:41:16 Anatomical Preprocessing and Surface Registration Pipeline
+2024-04-24 17:41:16 ------------------------Running PreFreeSurferPipeline
+2024-04-24 18:12:10 ------------------------Running FreeSurferPipeline
+2024-04-24 22:41:36 ------------------------Running PostFreeSurferPipeline
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+reading colortable from annotation file...
+colortable with 76 entries read (originally Simple_surface_labels2008.txt)
+
+WARNING: input sphere is either unusually irregular or not centered, inspect the input
+
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+reading colortable from annotation file...
+colortable with 76 entries read (originally Simple_surface_labels2008.txt)
+
+WARNING: input sphere is either unusually irregular or not centered, inspect the input
+
+
+WARNING: conflicting key value for label 'R_bankssts' reassigned to key 36
+
+
+WARNING: conflicting key value for label 'R_caudalanteriorcingulate' reassigned to key 37
+
+
+WARNING: conflicting key value for label 'R_caudalmiddlefrontal' reassigned to key 38
+
+
+WARNING: conflicting key value for label 'R_corpuscallosum' reassigned to key 39
+
+
+WARNING: conflicting key value for label 'R_cuneus' reassigned to key 40
+
+
+WARNING: conflicting key value for label 'R_entorhinal' reassigned to key 41
+
+
+WARNING: conflicting key value for label 'R_fusiform' reassigned to key 42
+
+
+WARNING: conflicting key value for label 'R_inferiorparietal' reassigned to key 43
+
+
+WARNING: conflicting key value for label 'R_inferiortemporal' reassigned to key 44
+
+
+WARNING: conflicting key value for label 'R_isthmuscingulate' reassigned to key 45
+
+
+WARNING: conflicting key value for label 'R_lateraloccipital' reassigned to key 46
+
+
+WARNING: conflicting key value for label 'R_lateralorbitofrontal' reassigned to key 47
+
+
+WARNING: conflicting key value for label 'R_lingual' reassigned to key 48
+
+
+WARNING: conflicting key value for label 'R_medialorbitofrontal' reassigned to key 49
+
+
+WARNING: conflicting key value for label 'R_middletemporal' reassigned to key 50
+
+
+WARNING: conflicting key value for label 'R_parahippocampal' reassigned to key 51
+
+
+WARNING: conflicting key value for label 'R_paracentral' reassigned to key 52
+
+
+WARNING: conflicting key value for label 'R_parsopercularis' reassigned to key 53
+
+
+WARNING: conflicting key value for label 'R_parsorbitalis' reassigned to key 54
+
+
+WARNING: conflicting key value for label 'R_parstriangularis' reassigned to key 55
+
+
+WARNING: conflicting key value for label 'R_pericalcarine' reassigned to key 56
+
+
+WARNING: conflicting key value for label 'R_postcentral' reassigned to key 57
+
+
+WARNING: conflicting key value for label 'R_posteriorcingulate' reassigned to key 58
+
+
+WARNING: conflicting key value for label 'R_precentral' reassigned to key 59
+
+
+WARNING: conflicting key value for label 'R_precuneus' reassigned to key 60
+
+
+WARNING: conflicting key value for label 'R_rostralanteriorcingulate' reassigned to key 61
+
+
+WARNING: conflicting key value for label 'R_rostralmiddlefrontal' reassigned to key 62
+
+
+WARNING: conflicting key value for label 'R_superiorfrontal' reassigned to key 63
+
+
+WARNING: conflicting key value for label 'R_superiorparietal' reassigned to key 64
+
+
+WARNING: conflicting key value for label 'R_superiortemporal' reassigned to key 65
+
+
+WARNING: conflicting key value for label 'R_supramarginal' reassigned to key 66
+
+
+WARNING: conflicting key value for label 'R_frontalpole' reassigned to key 67
+
+
+WARNING: conflicting key value for label 'R_temporalpole' reassigned to key 68
+
+
+WARNING: conflicting key value for label 'R_transversetemporal' reassigned to key 69
+
+
+WARNING: conflicting key value for label 'R_insula' reassigned to key 70
+
+
+WARNING: conflicting key value for label 'R_G&S_frontomargin' reassigned to key 76
+
+
+WARNING: conflicting key value for label 'R_G&S_occipital_inf' reassigned to key 77
+
+
+WARNING: conflicting key value for label 'R_G&S_paracentral' reassigned to key 78
+
+
+WARNING: conflicting key value for label 'R_G&S_subcentral' reassigned to key 79
+
+
+WARNING: conflicting key value for label 'R_G&S_transv_frontopol' reassigned to key 80
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Ant' reassigned to key 81
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Mid-Ant' reassigned to key 82
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Mid-Post' reassigned to key 83
+
+
+WARNING: conflicting key value for label 'R_G_cingul-Post-dorsal' reassigned to key 84
+
+
+WARNING: conflicting key value for label 'R_G_cingul-Post-ventral' reassigned to key 85
+
+
+WARNING: conflicting key value for label 'R_G_cuneus' reassigned to key 86
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Opercular' reassigned to key 87
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Orbital' reassigned to key 88
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Triangul' reassigned to key 89
+
+
+WARNING: conflicting key value for label 'R_G_front_middle' reassigned to key 90
+
+
+WARNING: conflicting key value for label 'R_G_front_sup' reassigned to key 91
+
+
+WARNING: conflicting key value for label 'R_G_Ins_lg&S_cent_ins' reassigned to key 92
+
+
+WARNING: conflicting key value for label 'R_G_insular_short' reassigned to key 93
+
+
+WARNING: conflicting key value for label 'R_G_occipital_middle' reassigned to key 94
+
+
+WARNING: conflicting key value for label 'R_G_occipital_sup' reassigned to key 95
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_lat-fusifor' reassigned to key 96
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_med-Lingual' reassigned to key 97
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_med-Parahip' reassigned to key 98
+
+
+WARNING: conflicting key value for label 'R_G_orbital' reassigned to key 99
+
+
+WARNING: conflicting key value for label 'R_G_pariet_inf-Angular' reassigned to key 100
+
+
+WARNING: conflicting key value for label 'R_G_pariet_inf-Supramar' reassigned to key 101
+
+
+WARNING: conflicting key value for label 'R_G_parietal_sup' reassigned to key 102
+
+
+WARNING: conflicting key value for label 'R_G_postcentral' reassigned to key 103
+
+
+WARNING: conflicting key value for label 'R_G_precentral' reassigned to key 104
+
+
+WARNING: conflicting key value for label 'R_G_precuneus' reassigned to key 105
+
+
+WARNING: conflicting key value for label 'R_G_rectus' reassigned to key 106
+
+
+WARNING: conflicting key value for label 'R_G_subcallosal' reassigned to key 107
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-G_T_transv' reassigned to key 108
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Lateral' reassigned to key 109
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Plan_polar' reassigned to key 110
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Plan_tempo' reassigned to key 111
+
+
+WARNING: conflicting key value for label 'R_G_temporal_inf' reassigned to key 112
+
+
+WARNING: conflicting key value for label 'R_G_temporal_middle' reassigned to key 113
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-ant-Horizont' reassigned to key 114
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-ant-Vertical' reassigned to key 115
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-post' reassigned to key 116
+
+
+WARNING: conflicting key value for label 'R_Medial_wall' reassigned to key 117
+
+
+WARNING: conflicting key value for label 'R_Pole_occipital' reassigned to key 118
+
+
+WARNING: conflicting key value for label 'R_Pole_temporal' reassigned to key 119
+
+
+WARNING: conflicting key value for label 'R_S_calcarine' reassigned to key 120
+
+
+WARNING: conflicting key value for label 'R_S_central' reassigned to key 121
+
+
+WARNING: conflicting key value for label 'R_S_cingul-Marginalis' reassigned to key 122
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_ant' reassigned to key 123
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_inf' reassigned to key 124
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_sup' reassigned to key 125
+
+
+WARNING: conflicting key value for label 'R_S_collat_transv_ant' reassigned to key 126
+
+
+WARNING: conflicting key value for label 'R_S_collat_transv_post' reassigned to key 127
+
+
+WARNING: conflicting key value for label 'R_S_front_inf' reassigned to key 128
+
+
+WARNING: conflicting key value for label 'R_S_front_middle' reassigned to key 129
+
+
+WARNING: conflicting key value for label 'R_S_front_sup' reassigned to key 130
+
+
+WARNING: conflicting key value for label 'R_S_interm_prim-Jensen' reassigned to key 131
+
+
+WARNING: conflicting key value for label 'R_S_intrapariet&P_trans' reassigned to key 132
+
+
+WARNING: conflicting key value for label 'R_S_oc_middle&Lunatus' reassigned to key 133
+
+
+WARNING: conflicting key value for label 'R_S_oc_sup&transversal' reassigned to key 134
+
+
+WARNING: conflicting key value for label 'R_S_occipital_ant' reassigned to key 135
+
+
+WARNING: conflicting key value for label 'R_S_oc-temp_lat' reassigned to key 136
+
+
+WARNING: conflicting key value for label 'R_S_oc-temp_med&Lingual' reassigned to key 137
+
+
+WARNING: conflicting key value for label 'R_S_orbital_lateral' reassigned to key 138
+
+
+WARNING: conflicting key value for label 'R_S_orbital_med-olfact' reassigned to key 139
+
+
+WARNING: conflicting key value for label 'R_S_orbital-H_Shaped' reassigned to key 140
+
+
+WARNING: conflicting key value for label 'R_S_parieto_occipital' reassigned to key 141
+
+
+WARNING: conflicting key value for label 'R_S_pericallosal' reassigned to key 142
+
+
+WARNING: conflicting key value for label 'R_S_postcentral' reassigned to key 143
+
+
+WARNING: conflicting key value for label 'R_S_precentral-inf-part' reassigned to key 144
+
+
+WARNING: conflicting key value for label 'R_S_precentral-sup-part' reassigned to key 145
+
+
+WARNING: conflicting key value for label 'R_S_suborbital' reassigned to key 146
+
+
+WARNING: conflicting key value for label 'R_S_subparietal' reassigned to key 147
+
+
+WARNING: conflicting key value for label 'R_S_temporal_inf' reassigned to key 148
+
+
+WARNING: conflicting key value for label 'R_S_temporal_sup' reassigned to key 149
+
+
+WARNING: conflicting key value for label 'R_S_temporal_transverse' reassigned to key 150
+
+
+WARNING: conflicting key value for label 'R_bankssts' reassigned to key 36
+
+
+WARNING: conflicting key value for label 'R_caudalanteriorcingulate' reassigned to key 37
+
+
+WARNING: conflicting key value for label 'R_caudalmiddlefrontal' reassigned to key 38
+
+
+WARNING: conflicting key value for label 'R_corpuscallosum' reassigned to key 39
+
+
+WARNING: conflicting key value for label 'R_cuneus' reassigned to key 40
+
+
+WARNING: conflicting key value for label 'R_entorhinal' reassigned to key 41
+
+
+WARNING: conflicting key value for label 'R_fusiform' reassigned to key 42
+
+
+WARNING: conflicting key value for label 'R_inferiorparietal' reassigned to key 43
+
+
+WARNING: conflicting key value for label 'R_inferiortemporal' reassigned to key 44
+
+
+WARNING: conflicting key value for label 'R_isthmuscingulate' reassigned to key 45
+
+
+WARNING: conflicting key value for label 'R_lateraloccipital' reassigned to key 46
+
+
+WARNING: conflicting key value for label 'R_lateralorbitofrontal' reassigned to key 47
+
+
+WARNING: conflicting key value for label 'R_lingual' reassigned to key 48
+
+
+WARNING: conflicting key value for label 'R_medialorbitofrontal' reassigned to key 49
+
+
+WARNING: conflicting key value for label 'R_middletemporal' reassigned to key 50
+
+
+WARNING: conflicting key value for label 'R_parahippocampal' reassigned to key 51
+
+
+WARNING: conflicting key value for label 'R_paracentral' reassigned to key 52
+
+
+WARNING: conflicting key value for label 'R_parsopercularis' reassigned to key 53
+
+
+WARNING: conflicting key value for label 'R_parsorbitalis' reassigned to key 54
+
+
+WARNING: conflicting key value for label 'R_parstriangularis' reassigned to key 55
+
+
+WARNING: conflicting key value for label 'R_pericalcarine' reassigned to key 56
+
+
+WARNING: conflicting key value for label 'R_postcentral' reassigned to key 57
+
+
+WARNING: conflicting key value for label 'R_posteriorcingulate' reassigned to key 58
+
+
+WARNING: conflicting key value for label 'R_precentral' reassigned to key 59
+
+
+WARNING: conflicting key value for label 'R_precuneus' reassigned to key 60
+
+
+WARNING: conflicting key value for label 'R_rostralanteriorcingulate' reassigned to key 61
+
+
+WARNING: conflicting key value for label 'R_rostralmiddlefrontal' reassigned to key 62
+
+
+WARNING: conflicting key value for label 'R_superiorfrontal' reassigned to key 63
+
+
+WARNING: conflicting key value for label 'R_superiorparietal' reassigned to key 64
+
+
+WARNING: conflicting key value for label 'R_superiortemporal' reassigned to key 65
+
+
+WARNING: conflicting key value for label 'R_supramarginal' reassigned to key 66
+
+
+WARNING: conflicting key value for label 'R_frontalpole' reassigned to key 67
+
+
+WARNING: conflicting key value for label 'R_temporalpole' reassigned to key 68
+
+
+WARNING: conflicting key value for label 'R_transversetemporal' reassigned to key 69
+
+
+WARNING: conflicting key value for label 'R_insula' reassigned to key 70
+
+
+WARNING: conflicting key value for label 'R_G&S_frontomargin' reassigned to key 76
+
+
+WARNING: conflicting key value for label 'R_G&S_occipital_inf' reassigned to key 77
+
+
+WARNING: conflicting key value for label 'R_G&S_paracentral' reassigned to key 78
+
+
+WARNING: conflicting key value for label 'R_G&S_subcentral' reassigned to key 79
+
+
+WARNING: conflicting key value for label 'R_G&S_transv_frontopol' reassigned to key 80
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Ant' reassigned to key 81
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Mid-Ant' reassigned to key 82
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Mid-Post' reassigned to key 83
+
+
+WARNING: conflicting key value for label 'R_G_cingul-Post-dorsal' reassigned to key 84
+
+
+WARNING: conflicting key value for label 'R_G_cingul-Post-ventral' reassigned to key 85
+
+
+WARNING: conflicting key value for label 'R_G_cuneus' reassigned to key 86
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Opercular' reassigned to key 87
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Orbital' reassigned to key 88
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Triangul' reassigned to key 89
+
+
+WARNING: conflicting key value for label 'R_G_front_middle' reassigned to key 90
+
+
+WARNING: conflicting key value for label 'R_G_front_sup' reassigned to key 91
+
+
+WARNING: conflicting key value for label 'R_G_Ins_lg&S_cent_ins' reassigned to key 92
+
+
+WARNING: conflicting key value for label 'R_G_insular_short' reassigned to key 93
+
+
+WARNING: conflicting key value for label 'R_G_occipital_middle' reassigned to key 94
+
+
+WARNING: conflicting key value for label 'R_G_occipital_sup' reassigned to key 95
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_lat-fusifor' reassigned to key 96
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_med-Lingual' reassigned to key 97
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_med-Parahip' reassigned to key 98
+
+
+WARNING: conflicting key value for label 'R_G_orbital' reassigned to key 99
+
+
+WARNING: conflicting key value for label 'R_G_pariet_inf-Angular' reassigned to key 100
+
+
+WARNING: conflicting key value for label 'R_G_pariet_inf-Supramar' reassigned to key 101
+
+
+WARNING: conflicting key value for label 'R_G_parietal_sup' reassigned to key 102
+
+
+WARNING: conflicting key value for label 'R_G_postcentral' reassigned to key 103
+
+
+WARNING: conflicting key value for label 'R_G_precentral' reassigned to key 104
+
+
+WARNING: conflicting key value for label 'R_G_precuneus' reassigned to key 105
+
+
+WARNING: conflicting key value for label 'R_G_rectus' reassigned to key 106
+
+
+WARNING: conflicting key value for label 'R_G_subcallosal' reassigned to key 107
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-G_T_transv' reassigned to key 108
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Lateral' reassigned to key 109
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Plan_polar' reassigned to key 110
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Plan_tempo' reassigned to key 111
+
+
+WARNING: conflicting key value for label 'R_G_temporal_inf' reassigned to key 112
+
+
+WARNING: conflicting key value for label 'R_G_temporal_middle' reassigned to key 113
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-ant-Horizont' reassigned to key 114
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-ant-Vertical' reassigned to key 115
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-post' reassigned to key 116
+
+
+WARNING: conflicting key value for label 'R_Medial_wall' reassigned to key 117
+
+
+WARNING: conflicting key value for label 'R_Pole_occipital' reassigned to key 118
+
+
+WARNING: conflicting key value for label 'R_Pole_temporal' reassigned to key 119
+
+
+WARNING: conflicting key value for label 'R_S_calcarine' reassigned to key 120
+
+
+WARNING: conflicting key value for label 'R_S_central' reassigned to key 121
+
+
+WARNING: conflicting key value for label 'R_S_cingul-Marginalis' reassigned to key 122
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_ant' reassigned to key 123
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_inf' reassigned to key 124
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_sup' reassigned to key 125
+
+
+WARNING: conflicting key value for label 'R_S_collat_transv_ant' reassigned to key 126
+
+
+WARNING: conflicting key value for label 'R_S_collat_transv_post' reassigned to key 127
+
+
+WARNING: conflicting key value for label 'R_S_front_inf' reassigned to key 128
+
+
+WARNING: conflicting key value for label 'R_S_front_middle' reassigned to key 129
+
+
+WARNING: conflicting key value for label 'R_S_front_sup' reassigned to key 130
+
+
+WARNING: conflicting key value for label 'R_S_interm_prim-Jensen' reassigned to key 131
+
+
+WARNING: conflicting key value for label 'R_S_intrapariet&P_trans' reassigned to key 132
+
+
+WARNING: conflicting key value for label 'R_S_oc_middle&Lunatus' reassigned to key 133
+
+
+WARNING: conflicting key value for label 'R_S_oc_sup&transversal' reassigned to key 134
+
+
+WARNING: conflicting key value for label 'R_S_occipital_ant' reassigned to key 135
+
+
+WARNING: conflicting key value for label 'R_S_oc-temp_lat' reassigned to key 136
+
+
+WARNING: conflicting key value for label 'R_S_oc-temp_med&Lingual' reassigned to key 137
+
+
+WARNING: conflicting key value for label 'R_S_orbital_lateral' reassigned to key 138
+
+
+WARNING: conflicting key value for label 'R_S_orbital_med-olfact' reassigned to key 139
+
+
+WARNING: conflicting key value for label 'R_S_orbital-H_Shaped' reassigned to key 140
+
+
+WARNING: conflicting key value for label 'R_S_parieto_occipital' reassigned to key 141
+
+
+WARNING: conflicting key value for label 'R_S_pericallosal' reassigned to key 142
+
+
+WARNING: conflicting key value for label 'R_S_postcentral' reassigned to key 143
+
+
+WARNING: conflicting key value for label 'R_S_precentral-inf-part' reassigned to key 144
+
+
+WARNING: conflicting key value for label 'R_S_precentral-sup-part' reassigned to key 145
+
+
+WARNING: conflicting key value for label 'R_S_suborbital' reassigned to key 146
+
+
+WARNING: conflicting key value for label 'R_S_subparietal' reassigned to key 147
+
+
+WARNING: conflicting key value for label 'R_S_temporal_inf' reassigned to key 148
+
+
+WARNING: conflicting key value for label 'R_S_temporal_sup' reassigned to key 149
+
+
+WARNING: conflicting key value for label 'R_S_temporal_transverse' reassigned to key 150
+
+
+WARNING: conflicting key value for label 'R_bankssts' reassigned to key 36
+
+
+WARNING: conflicting key value for label 'R_caudalanteriorcingulate' reassigned to key 37
+
+
+WARNING: conflicting key value for label 'R_caudalmiddlefrontal' reassigned to key 38
+
+
+WARNING: conflicting key value for label 'R_corpuscallosum' reassigned to key 39
+
+
+WARNING: conflicting key value for label 'R_cuneus' reassigned to key 40
+
+
+WARNING: conflicting key value for label 'R_entorhinal' reassigned to key 41
+
+
+WARNING: conflicting key value for label 'R_fusiform' reassigned to key 42
+
+
+WARNING: conflicting key value for label 'R_inferiorparietal' reassigned to key 43
+
+
+WARNING: conflicting key value for label 'R_inferiortemporal' reassigned to key 44
+
+
+WARNING: conflicting key value for label 'R_isthmuscingulate' reassigned to key 45
+
+
+WARNING: conflicting key value for label 'R_lateraloccipital' reassigned to key 46
+
+
+WARNING: conflicting key value for label 'R_lateralorbitofrontal' reassigned to key 47
+
+
+WARNING: conflicting key value for label 'R_lingual' reassigned to key 48
+
+
+WARNING: conflicting key value for label 'R_medialorbitofrontal' reassigned to key 49
+
+
+WARNING: conflicting key value for label 'R_middletemporal' reassigned to key 50
+
+
+WARNING: conflicting key value for label 'R_parahippocampal' reassigned to key 51
+
+
+WARNING: conflicting key value for label 'R_paracentral' reassigned to key 52
+
+
+WARNING: conflicting key value for label 'R_parsopercularis' reassigned to key 53
+
+
+WARNING: conflicting key value for label 'R_parsorbitalis' reassigned to key 54
+
+
+WARNING: conflicting key value for label 'R_parstriangularis' reassigned to key 55
+
+
+WARNING: conflicting key value for label 'R_pericalcarine' reassigned to key 56
+
+
+WARNING: conflicting key value for label 'R_postcentral' reassigned to key 57
+
+
+WARNING: conflicting key value for label 'R_posteriorcingulate' reassigned to key 58
+
+
+WARNING: conflicting key value for label 'R_precentral' reassigned to key 59
+
+
+WARNING: conflicting key value for label 'R_precuneus' reassigned to key 60
+
+
+WARNING: conflicting key value for label 'R_rostralanteriorcingulate' reassigned to key 61
+
+
+WARNING: conflicting key value for label 'R_rostralmiddlefrontal' reassigned to key 62
+
+
+WARNING: conflicting key value for label 'R_superiorfrontal' reassigned to key 63
+
+
+WARNING: conflicting key value for label 'R_superiorparietal' reassigned to key 64
+
+
+WARNING: conflicting key value for label 'R_superiortemporal' reassigned to key 65
+
+
+WARNING: conflicting key value for label 'R_supramarginal' reassigned to key 66
+
+
+WARNING: conflicting key value for label 'R_frontalpole' reassigned to key 67
+
+
+WARNING: conflicting key value for label 'R_temporalpole' reassigned to key 68
+
+
+WARNING: conflicting key value for label 'R_transversetemporal' reassigned to key 69
+
+
+WARNING: conflicting key value for label 'R_insula' reassigned to key 70
+
+
+WARNING: conflicting key value for label 'R_G&S_frontomargin' reassigned to key 76
+
+
+WARNING: conflicting key value for label 'R_G&S_occipital_inf' reassigned to key 77
+
+
+WARNING: conflicting key value for label 'R_G&S_paracentral' reassigned to key 78
+
+
+WARNING: conflicting key value for label 'R_G&S_subcentral' reassigned to key 79
+
+
+WARNING: conflicting key value for label 'R_G&S_transv_frontopol' reassigned to key 80
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Ant' reassigned to key 81
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Mid-Ant' reassigned to key 82
+
+
+WARNING: conflicting key value for label 'R_G&S_cingul-Mid-Post' reassigned to key 83
+
+
+WARNING: conflicting key value for label 'R_G_cingul-Post-dorsal' reassigned to key 84
+
+
+WARNING: conflicting key value for label 'R_G_cingul-Post-ventral' reassigned to key 85
+
+
+WARNING: conflicting key value for label 'R_G_cuneus' reassigned to key 86
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Opercular' reassigned to key 87
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Orbital' reassigned to key 88
+
+
+WARNING: conflicting key value for label 'R_G_front_inf-Triangul' reassigned to key 89
+
+
+WARNING: conflicting key value for label 'R_G_front_middle' reassigned to key 90
+
+
+WARNING: conflicting key value for label 'R_G_front_sup' reassigned to key 91
+
+
+WARNING: conflicting key value for label 'R_G_Ins_lg&S_cent_ins' reassigned to key 92
+
+
+WARNING: conflicting key value for label 'R_G_insular_short' reassigned to key 93
+
+
+WARNING: conflicting key value for label 'R_G_occipital_middle' reassigned to key 94
+
+
+WARNING: conflicting key value for label 'R_G_occipital_sup' reassigned to key 95
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_lat-fusifor' reassigned to key 96
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_med-Lingual' reassigned to key 97
+
+
+WARNING: conflicting key value for label 'R_G_oc-temp_med-Parahip' reassigned to key 98
+
+
+WARNING: conflicting key value for label 'R_G_orbital' reassigned to key 99
+
+
+WARNING: conflicting key value for label 'R_G_pariet_inf-Angular' reassigned to key 100
+
+
+WARNING: conflicting key value for label 'R_G_pariet_inf-Supramar' reassigned to key 101
+
+
+WARNING: conflicting key value for label 'R_G_parietal_sup' reassigned to key 102
+
+
+WARNING: conflicting key value for label 'R_G_postcentral' reassigned to key 103
+
+
+WARNING: conflicting key value for label 'R_G_precentral' reassigned to key 104
+
+
+WARNING: conflicting key value for label 'R_G_precuneus' reassigned to key 105
+
+
+WARNING: conflicting key value for label 'R_G_rectus' reassigned to key 106
+
+
+WARNING: conflicting key value for label 'R_G_subcallosal' reassigned to key 107
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-G_T_transv' reassigned to key 108
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Lateral' reassigned to key 109
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Plan_polar' reassigned to key 110
+
+
+WARNING: conflicting key value for label 'R_G_temp_sup-Plan_tempo' reassigned to key 111
+
+
+WARNING: conflicting key value for label 'R_G_temporal_inf' reassigned to key 112
+
+
+WARNING: conflicting key value for label 'R_G_temporal_middle' reassigned to key 113
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-ant-Horizont' reassigned to key 114
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-ant-Vertical' reassigned to key 115
+
+
+WARNING: conflicting key value for label 'R_Lat_Fis-post' reassigned to key 116
+
+
+WARNING: conflicting key value for label 'R_Medial_wall' reassigned to key 117
+
+
+WARNING: conflicting key value for label 'R_Pole_occipital' reassigned to key 118
+
+
+WARNING: conflicting key value for label 'R_Pole_temporal' reassigned to key 119
+
+
+WARNING: conflicting key value for label 'R_S_calcarine' reassigned to key 120
+
+
+WARNING: conflicting key value for label 'R_S_central' reassigned to key 121
+
+
+WARNING: conflicting key value for label 'R_S_cingul-Marginalis' reassigned to key 122
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_ant' reassigned to key 123
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_inf' reassigned to key 124
+
+
+WARNING: conflicting key value for label 'R_S_circular_insula_sup' reassigned to key 125
+
+
+WARNING: conflicting key value for label 'R_S_collat_transv_ant' reassigned to key 126
+
+
+WARNING: conflicting key value for label 'R_S_collat_transv_post' reassigned to key 127
+
+
+WARNING: conflicting key value for label 'R_S_front_inf' reassigned to key 128
+
+
+WARNING: conflicting key value for label 'R_S_front_middle' reassigned to key 129
+
+
+WARNING: conflicting key value for label 'R_S_front_sup' reassigned to key 130
+
+
+WARNING: conflicting key value for label 'R_S_interm_prim-Jensen' reassigned to key 131
+
+
+WARNING: conflicting key value for label 'R_S_intrapariet&P_trans' reassigned to key 132
+
+
+WARNING: conflicting key value for label 'R_S_oc_middle&Lunatus' reassigned to key 133
+
+
+WARNING: conflicting key value for label 'R_S_oc_sup&transversal' reassigned to key 134
+
+
+WARNING: conflicting key value for label 'R_S_occipital_ant' reassigned to key 135
+
+
+WARNING: conflicting key value for label 'R_S_oc-temp_lat' reassigned to key 136
+
+
+WARNING: conflicting key value for label 'R_S_oc-temp_med&Lingual' reassigned to key 137
+
+
+WARNING: conflicting key value for label 'R_S_orbital_lateral' reassigned to key 138
+
+
+WARNING: conflicting key value for label 'R_S_orbital_med-olfact' reassigned to key 139
+
+
+WARNING: conflicting key value for label 'R_S_orbital-H_Shaped' reassigned to key 140
+
+
+WARNING: conflicting key value for label 'R_S_parieto_occipital' reassigned to key 141
+
+
+WARNING: conflicting key value for label 'R_S_pericallosal' reassigned to key 142
+
+
+WARNING: conflicting key value for label 'R_S_postcentral' reassigned to key 143
+
+
+WARNING: conflicting key value for label 'R_S_precentral-inf-part' reassigned to key 144
+
+
+WARNING: conflicting key value for label 'R_S_precentral-sup-part' reassigned to key 145
+
+
+WARNING: conflicting key value for label 'R_S_suborbital' reassigned to key 146
+
+
+WARNING: conflicting key value for label 'R_S_subparietal' reassigned to key 147
+
+
+WARNING: conflicting key value for label 'R_S_temporal_inf' reassigned to key 148
+
+
+WARNING: conflicting key value for label 'R_S_temporal_sup' reassigned to key 149
+
+
+WARNING: conflicting key value for label 'R_S_temporal_transverse' reassigned to key 150
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.white.164k_fs_LR.surf.gii was 0.09838 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.midthickness.164k_fs_LR.surf.gii was 0.071721 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.pial.164k_fs_LR.surf.gii was 0.071254 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.inflated.164k_fs_LR.surf.gii was 0.070994 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.very_inflated.164k_fs_LR.surf.gii was 0.07094 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.white.164k_fs_LR.surf.gii was 0.095314 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.midthickness.164k_fs_LR.surf.gii was 0.070593 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.pial.164k_fs_LR.surf.gii was 0.069764 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.inflated.164k_fs_LR.surf.gii was 0.069453 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.very_inflated.164k_fs_LR.surf.gii was 0.069859 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.aparc.164k_fs_LR.dlabel.nii was 0.127019 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.aparc.a2009s.164k_fs_LR.dlabel.nii was 0.130295 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.sulc.164k_fs_LR.dscalar.nii was 0.129752 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.thickness.164k_fs_LR.dscalar.nii was 0.11845 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.curvature.164k_fs_LR.dscalar.nii was 0.118325 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.MyelinMap_BC.164k_fs_LR.dscalar.nii was 0.12176 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.SmoothedMyelinMap_BC.164k_fs_LR.dscalar.nii was 0.117338 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/S1200.MyelinMap_BC_MSMAll.164k_fs_LR.dscalar.nii was 0.118068 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/S1200.sulc_MSMAll.164k_fs_LR.dscalar.nii was 0.118699 seconds.
+
+
+Info: Time to color volume data is 0.201 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/T2w_restore.nii.gz was 0.392454 seconds.
+
+
+Info: Time to color volume data is 0.187 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/T1w_restore.nii.gz was 0.400923 seconds.
+
+
+Info: Time to color volume data is 0.080 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/aparc+aseg.nii.gz was 0.257146 seconds.
+
+
+Info: Time to color volume data is 0.082 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/aparc.a2009s+aseg.nii.gz was 0.273742 seconds.
+
+
+Info: Time to color volume data is 0.083 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/wmparc.nii.gz was 0.28646 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.midthickness.164k_fs_LR.surf.gii was 0.100113 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.inflated.164k_fs_LR.surf.gii was 0.071737 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.very_inflated.164k_fs_LR.surf.gii was 0.071698 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.sphere.164k_fs_LR.surf.gii was 0.070655 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.midthickness.164k_fs_LR.surf.gii was 0.09527 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.inflated.164k_fs_LR.surf.gii was 0.070516 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.very_inflated.164k_fs_LR.surf.gii was 0.06948 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.sphere.164k_fs_LR.surf.gii was 0.069471 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.sulc.164k_fs_LR.dscalar.nii was 0.135341 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.curvature.164k_fs_LR.dscalar.nii was 0.125327 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.MyelinMap_BC.164k_fs_LR.dscalar.nii was 0.119045 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.SmoothedMyelinMap_BC.164k_fs_LR.dscalar.nii was 0.118926 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.StrainJ_MSMSulc.164k_fs_LR.dscalar.nii was 0.131831 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.StrainR_MSMSulc.164k_fs_LR.dscalar.nii was 0.131236 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/sub004.NonlinearRegJacobians_FNIRT.164k_fs_LR.dscalar.nii was 0.139866 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.StrainJ_FS.164k_fs_LR.dscalar.nii was 0.135628 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.StrainR_FS.164k_fs_LR.dscalar.nii was 0.13866 seconds.
+
+
+Info: Time to color volume data is 0.199 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/T1w_restore.nii.gz was 0.391872 seconds.
+
+
+Info: Time to color volume data is 0.192 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/T2w_restore.nii.gz was 0.379199 seconds.
+
+
+Info: Time to color volume data is 0.388 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/MNI152_T1_0.8mm.nii.gz was 0.516602 seconds.
+
+
+Info: Time to color volume data is 0.027 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/sub004.NonlinearRegJacobians_log2.nii.gz was 0.048259 seconds.
+
+ERRORS loading scene, output image may be incorrect.
+NAME OF FILE: sub004.StrainJ_MSMAll.164k_fs_LR.dscalar.nii
+PATH TO FILE: /home/cputest/Stroke/Data/sub004/MNINonLinear
+
+File not found:
+NAME OF FILE: sub004.StrainR_MSMAll.164k_fs_LR.dscalar.nii
+PATH TO FILE: /home/cputest/Stroke/Data/sub004/MNINonLinear
+
+File not found:
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.L.midthickness.164k_fs_LR.surf.gii was 0.099251 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/sub004.R.midthickness.164k_fs_LR.surf.gii was 0.095478 seconds.
+
+
+Info: Time to color volume data is 0.190 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/T2w_restore.nii.gz was 0.377515 seconds.
+
+
+Info: Time to color volume data is 0.186 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/T1w_restore.nii.gz was 0.377242 seconds.
+
+
+Info: Time to color volume data is 0.382 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/MNI152_T1_0.8mm.nii.gz was 0.522908 seconds.
+
+
+Info: Time to color volume data is 0.027 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/sub004.NonlinearRegJacobians_log2.nii.gz was 0.047821 seconds.
+
+
+Info: Time to color volume data is 0.169 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/StructuralQC/sub004.T1w_acpc_dc_restore_to_MNILinear.nii.gz was 0.341677 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.L.inflated.native.surf.gii was 0.09665 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.L.midthickness.native.surf.gii was 0.066808 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.L.pial.native.surf.gii was 0.066012 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.L.very_inflated.native.surf.gii was 0.066854 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.L.white.native.surf.gii was 0.067558 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.R.inflated.native.surf.gii was 0.094917 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.R.midthickness.native.surf.gii was 0.067602 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.R.pial.native.surf.gii was 0.072525 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.R.very_inflated.native.surf.gii was 0.067861 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/Native/sub004.R.white.native.surf.gii was 0.068194 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.aparc.native.dlabel.nii was 0.108635 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.aparc.a2009s.native.dlabel.nii was 0.110858 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.curvature.native.dscalar.nii was 0.101027 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.sulc.native.dscalar.nii was 0.106295 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.thickness.native.dscalar.nii was 0.10025 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.MyelinMap_BC.native.dscalar.nii was 0.106415 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/MNINonLinear/Native/sub004.SmoothedMyelinMap_BC.native.dscalar.nii was 0.104458 seconds.
+
+
+Info: Time to color volume data is 0.177 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/T2w_acpc_dc_restore.nii.gz was 0.354806 seconds.
+
+
+Info: Time to color volume data is 0.182 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/T1w_acpc_dc_restore.nii.gz was 0.359388 seconds.
+
+
+Info: Time to color volume data is 0.076 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/aparc+aseg.nii.gz was 0.257091 seconds.
+
+
+Info: Time to color volume data is 0.080 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/aparc.a2009s+aseg.nii.gz was 0.273251 seconds.
+
+
+Info: Time to color volume data is 0.083 seconds.
+
+
+Info: Time to read /home/cputest/Stroke/Data/sub004/T1w/wmparc.nii.gz was 0.291577 seconds.
+
+2024-04-24 23:52:41 ------------------------Running done
