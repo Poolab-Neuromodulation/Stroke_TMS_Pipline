@@ -6,17 +6,9 @@ subject_id = 'ME18'
 hemi = 'rh'
 
 
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-    file_path = './config.py'
+    import os
+    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.py')
     file_mode = 'r+'
     target_file = open(file_path, file_mode)
 
@@ -28,8 +20,8 @@ if __name__ == '__main__':
     new_content = new_content.replace(old, f'\'subject_id\': \'{subject_id}\',')
     old = re.findall(r'\'hemi\': \S+', new_content)[0]
     new_content = new_content.replace(old, f'\'hemi\': \'{hemi}\',')
-    # old = re.findall(r'\'source\': \S+', new_content)[0]
-    # new_content = new_content.replace(old, f'\'source\': \'{raw_data}\'')
+    old = re.findall(r'\'source\': \S+', new_content)[0]
+    new_content = new_content.replace(old, f'\'source\': \'{raw_data}\',')
 
     target_file.seek(0)
     target_file.write(new_content)
