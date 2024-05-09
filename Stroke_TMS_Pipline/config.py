@@ -5,10 +5,10 @@
 LOG_DIR = '/home/cputest/Stroke/Code/log'
 
 SCRIPTS_CONFIG = {
-    'MultiEcho' : '/home/cputest/Stroke/Code/MultiEchofMRI-Pipeline',
-    'HCPPipline': '/home/cputest/Stroke/Code/HCPpipelines',
-    'PFM' : '/home/cputest/Stroke/Code/Targeted-Functional-Network-Stimulation-main/PFM',
-    'TANS' : '/home/cputest/Stroke/Code/Targeted-Functional-Network-Stimulation-main/TANS',
+    'MultiEcho' : '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/MultiEchofMRI-Pipeline',
+    'HCPPipline': '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/HCPpipelines',
+    'PFM' : '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/Targeted-Functional-Network-Stimulation-main/PFM',
+    'TANS' : '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/Targeted-Functional-Network-Stimulation-main/TANS',
 } 
 
 DATA_CONFIG = {
@@ -25,13 +25,13 @@ SIMNIBS_CONFIG = {
 
 DTI_CONFIG = {
     # 'root': '/home/cputest/Stroke/Code/DTI/Code/mrtrix_data/P_hejieshi',
-    'script': '/home/cputest/Stroke/Code/DTI/',
-    'VISTASOFT' : '/home/cputest/Stroke/Code/DTI/vistasoft-master',
+    'script': '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/DTI/',
+    'VISTASOFT' : '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/DTI/vistasoft-master',
     'MRTRIX3_SHARE': '/home/cputest/anaconda3/share/mrtrix3'
 }
 
 TASK_FMRI_CONFIG = {
-    'script': '/home/cputest/Stroke/Code/Stroke_TMS_Pipline/task_fmri_script',
+    'script': '/home/cputest/Stroke/github_TMS_pipline/Stroke_TMS_Pipline/Stroke_TMS_Pipline/task_fmri_script',
     'task_left': 'left_finger_motor',
     'task_right': 'right_finger_motor',
     'delay': 2.51, # 4
