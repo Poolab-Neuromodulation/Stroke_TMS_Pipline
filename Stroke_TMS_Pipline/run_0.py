@@ -8,9 +8,7 @@ hemi = 'rh'
 
 
 if __name__ == '__main__':
-    import os
-    
-    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.py')
+    file_path = './config.py'
     file_mode = 'r+'
     target_file = open(file_path, file_mode)
 

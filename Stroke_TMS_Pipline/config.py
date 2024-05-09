@@ -12,9 +12,9 @@ SCRIPTS_CONFIG = {
 } 
 
 DATA_CONFIG = {
-    'source': '/home/cputest/disk_480G/github_test/sub003_sbm_20240412', # 1
-    'root' : '/home/cputest/disk_480G/github_test',
-    'subject_id': 'sub003', # 2
+    'source' : '/home/cputest/Stroke/Data/sub004_raw', # 1
+    'root' : '/home/cputest/Stroke/Data/',
+    'subject_id': 'ME13', # 2
     'hemi': 'rh', # 3
 }
 
