@@ -23,7 +23,7 @@ for s = 1:length(sessions)
         title(['Session:' num2str(s) ', Run:' num2str(r)]);
 
         % load various CIFTIs;
-%         a = ft_read_cifti_mod([Subdir '/func/rest/session_' num2str(s) '/run_' num2str(r) '/Rest_OCME.dtseries.nii']);
+         a = ft_read_cifti_mod([Subdir '/func/rest/session_' num2str(s) '/run_' num2str(r) '/Rest_OCME.dtseries.nii']);
         b = ft_read_cifti_mod([Subdir '/func/rest/session_' num2str(s) '/run_' num2str(r) '/Rest_OCME+MEICA.dtseries.nii']);
         c = ft_read_cifti_mod([Subdir '/func/rest/session_' num2str(s) '/run_' num2str(r) '/Rest_OCME+MEICA+MGTR.dtseries.nii']);
 %         d = ft_read_cifti_mod([Subdir '/func/rest/session_' num2str(s) '/run_' num2str(r) '/Rest_fmriprep.dtseries.nii']);
@@ -42,11 +42,11 @@ for s = 1:length(sessions)
 %         F = F./repmat(std(F),size(F,1),1);
 %         F = F';
 
-%         % remove mean and make std=1
-%         A_tSNR = nanmean(mean(a.data,2) ./ std(a.data,[],2));
-%         A = detrend(a.data','constant');
-%         A = A./repmat(std(A),size(A,1),1);
-%         A = A';
+         % remove mean and make std=1
+         A_tSNR = nanmean(mean(a.data,2) ./ std(a.data,[],2));
+         A = detrend(a.data','constant');
+         A = A./repmat(std(A),size(A,1),1);
+        A = A';
 
         % remove mean and make std=1
         B_tSNR = nanmean(mean(b.data,2) ./ std(b.data,[],2));
@@ -64,6 +64,7 @@ for s = 1:length(sessions)
 %         D = detrend(d.data','constant');
 %         D = D./repmat(std(D),size(D,1),1);
 %         D = D';
+
 
         % load motion estimates;  (filtered FD; 2 TRs);
         rp = load([Subdir '/func/rest/session_' num2str(s) '/run_' num2str(r) '/MCF.par']);
