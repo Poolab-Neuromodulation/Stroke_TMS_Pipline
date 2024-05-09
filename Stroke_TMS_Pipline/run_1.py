@@ -3,7 +3,7 @@ from threading import Thread
 import time
 
 
-rs = rsfMRIProcessor(multi_echo=True, n_thread=16)
+rs = rsfMRIProcessor(multi_echo=False, n_thread=16)
 task = taskfMRIProcessor()
 dti = DTIProcessor()
 qc = QualityControl()
@@ -62,15 +62,15 @@ if __name__ == '__main__':
 
     t1 = Thread(target=format_transform1)
     t2 = Thread(target=anat_pipline1)
-    t3 = Thread(target=multi_echo_pipline1)
+    t3 = Thread(target=single_echo_pipline1)
     t4 = Thread(target=pfm1)
     t5 = Thread(target=task1)
     t6 = Thread(target=dti1)
     t7 = Thread(target=qc1)
     t8 = Thread(target=tans_head_model1)
 
-    t1.start()
-    t1.join()
+    # t1.start()
+    # t1.join()
     t2.start()
     t2.join()
     t3.start()
