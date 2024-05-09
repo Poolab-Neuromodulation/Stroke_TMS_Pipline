@@ -3,7 +3,7 @@ from threading import Thread
 import time
 
 
-rs = rsfMRIProcessor(multi_echo=True, n_thread=64)
+rs = rsfMRIProcessor(multi_echo=True, n_thread=16)
 task = taskfMRIProcessor()
 dti = DTIProcessor()
 qc = QualityControl()

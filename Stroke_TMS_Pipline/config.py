@@ -12,9 +12,9 @@ SCRIPTS_CONFIG = {
 } 
 
 DATA_CONFIG = {
-    'source' : '/home/cputest/Stroke/Data/sub004_raw', # 1
-    'root' : '/home/cputest/Stroke/Data/',
-    'subject_id': 'ME13', # 2
+    'source': '/home/cputest/disk_480G/github_test/sub003_sbm_20240412', # 1
+    'root' : '/home/cputest/disk_480G/github_test',
+    'subject_id': 'sub003', # 2
     'hemi': 'rh', # 3
 }
 
@@ -31,9 +31,8 @@ DTI_CONFIG = {
 }
 
 TASK_FMRI_CONFIG = {
-    # 'source': '/home/poolab/NAS/Projects/TMS_stroke/human/1_RuiJinHospital/strokepatients/MRI/sub003_sbm_20240412/bold_2.4mmiso_se_task_SaveBySlc_302',
     'script': '/home/cputest/Stroke/Code/Stroke_TMS_Pipline/task_fmri_script',
     'task_left': 'left_finger_motor',
     'task_right': 'right_finger_motor',
-    'delay': 3.26, # 4
+    'delay': 2.51, # 4
 }
