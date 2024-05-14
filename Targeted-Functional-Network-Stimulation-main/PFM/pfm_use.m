@@ -13,7 +13,7 @@ if meanFD > 0.5
 else
     threshold = 0.5;
 end
-threshold = 0.5;
+% threshold = 0.5;
 % concatenate and smooth resting-state fMRI datasets;
 nSessions = length(dir([Subdir '/func/rest/session_*']));
 [C,ScanIdx,FD] = concatenate_scans(Subdir,'Rest_OCME+MEICA+MGTR',1:nSessions);
