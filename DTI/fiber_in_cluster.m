@@ -90,12 +90,14 @@ uClusters = unique(nonzeros(cluster_data));
 tmpCluster = cluster;
 
 res = int16.empty;
+Percentage = double.empty;
 
-% res2 = struct();
 for i = 1:size(uClusters,1)
     tmpCluster.data = cluster.data;
     tmpCluster.data(tmpCluster.data ~= uClusters(i)) = 0;
+    
     ft_write_cifti_mod('./tmp.dtseries.nii',tmpCluster);
+    area(i) = 0;
     res(i) = 0;
     system(['wb_command -cifti-separate ./tmp.dtseries.nii COLUMN -metric ' Hemihemi ' ./task.32k_fs_LR.shape.gii']);
     system(['wb_command -metric-resample ./task.32k_fs_LR.shape.gii ' REG_MSMSulc_FSLR32k ' ' REG_MSMSulc ' ADAP_BARY_AREA ./task.native.shape.gii -area-surfs ' MIDTHICK_FSLR32k ' ' MIDTHICK ' -current-roi ' ROI_FSLR32k]);
@@ -128,21 +130,27 @@ for i = 1:size(uClusters,1)
         dist = pdist2(fb, ras_coord, 'euclidean');
         if min(dist, [], "all") < 1.5 * voxel_size
             res(i) = res(i) + 1;
+            area(i) = nnz(tmpCluster.data);
         end
     end
     system(['rm ./task.ROI' num2str(uClusters(i)) '.native.nii.gz']);
 end
 
-[sorted, idx] = sort(res, 'descend');
-Cluster_index = uClusters(idx(sorted~=0));
-Fiber_Number = sorted(sorted~=0).';
-T = table(Cluster_index, Fiber_Number);
-writetable(T, [Subdir '/pfm/' target '_fiber.txt'], 'Delimiter', '\t', 'WriteRowNames', true);
+for iii = 1:size(res,2)
+    if res(iii) == 0
+        Percentage(iii) = 0;
+        continue
+    end
+    Percentage(iii) = single(res(iii)) / single(area(iii));
+end
 
-% [val, idx] = max(res);
-% tmpCluster.data = cluster.data;
-% tmpCluster.data(tmpCluster.data ~= uClusters(idx)) = 0;
-% ft_write_cifti_mod(output_path,tmpCluster);
+[sorted, idx] = sort(Percentage, 'descend');
+Cluster_index = uClusters(idx(sorted~=0));
+Fiber_Number = res(idx(sorted~=0)).';
+Cluster_area = area(idx(sorted~=0)).';
+Percentage = sorted(sorted~=0).';
+T = table(Cluster_index, Percentage, Fiber_Number, Cluster_area);
+writetable(T, [Subdir '/pfm/' target '_fiber.txt'], 'Delimiter', '\t', 'WriteRowNames', true);
 
 end
 
